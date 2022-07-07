@@ -54,7 +54,7 @@ namespace StarterAssets
 
 		public void LookInput(Vector2 newLookDirection)
 		{
-			look = 3*newLookDirection; //the speed for cursor change look direction
+			look = 2*newLookDirection; //the speed for cursor change look direction
 		}
 
 		public void JumpInput(bool newJumpState)
