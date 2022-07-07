@@ -2,11 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
+using Michsky.UI;
 
 public class Function_EnvironmentBar : MonoBehaviour
 {
-
-    public Slider slider;
+    
+    public Slider sd;
     public Gradient gradient;
     public Image fill;
 
@@ -14,13 +15,13 @@ public class Function_EnvironmentBar : MonoBehaviour
 
     void Start()
     {
-        slider = GetComponent<Slider>();
+        sd = GetComponent<Slider>();
         
     }
 
     void Update()
     {
-        fill.tintColor = gradient.Evaluate((slider.value / 100));
+        fill.tintColor = gradient.Evaluate((sd.value / 100));
     }
 
 

@@ -50,7 +50,7 @@ public class ChangeEffect : MonoBehaviour
             newResults = MainScript.results;
             (emotionData,sequence)=Function_BiggestEmojData.GetMax(newResults);
             engagementData = Function_DoubletoFloat.emoMath(newResults[9]);
-            Debug.Log(engagementData);
+            //Debug.Log(engagementData);
 
             //Set delay--------
             timer+= Time.deltaTime;
