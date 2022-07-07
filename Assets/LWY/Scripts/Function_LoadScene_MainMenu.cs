@@ -10,5 +10,10 @@ public class Function_LoadScene_MainMenu : MonoBehaviour
         SceneManager.LoadScene("TestScene1");
    }
 
+   public void ExitGame(){
+        SceneManager.LoadScene("Menu");
+   }
+
+
 
 }

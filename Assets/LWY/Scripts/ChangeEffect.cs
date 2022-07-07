@@ -62,6 +62,8 @@ public class ChangeEffect : MonoBehaviour
                 selectEmotion();
                 selectSize();
                 selectEnvironmetColor();
+                
+                //Function_EnvironmentBar1.SetEnvironValue();
 
                 timer =0;
 

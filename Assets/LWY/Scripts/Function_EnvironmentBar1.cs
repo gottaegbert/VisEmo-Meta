@@ -8,18 +8,30 @@ public class Function_EnvironmentBar1 : MonoBehaviour
 {
     public SliderManager slidermanager;
     
+    void Update(){
+        
+        //slidermanager.value;
+        //Debug.Log(slidermanager.value);
+        
+
+        //slidermanager.value=0.5f;
+
+    }
+
+
+
+
+    /*
 
     void Start()
     {
 
     }
 
-    // Update is called once per frame
     void Update()
-    {
-        
-        Debug.Log(slidermanager.mainSlider.value);
-
-
+            
+        Debug.Log(slidermanager.main );
     }
+
+    */
 }
