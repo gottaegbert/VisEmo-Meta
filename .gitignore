@@ -1,0 +1,27 @@
+# Windows
+Thumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+
+# Code Editors
+/.idea
+/.vscode
+/*.csproj
+/*.sln
+*.swp
+*.vcxproj.user
+
+# Unity
+/Library
+/Logs
+/Recordings
+/UserSettings
+/Temp
+.vs/metaverse-emoj/v16/.suo
+.vs/metaverse-emoj/v16/.suo
+.vs/metaverse-emoj/v16/.suo
+*.cache
+*.cache
+*.dat
