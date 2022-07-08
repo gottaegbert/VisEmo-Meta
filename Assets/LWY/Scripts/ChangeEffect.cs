@@ -86,12 +86,24 @@ public class ChangeEffect : MonoBehaviour
                     Function_VFX_Meeting.Surprise(visualEffect,emotionData);
                     break;
 
+            case 5:
+                Function_VFX_Meeting.Sadness(visualEffect, emotionData);
+                break;
 
-                case 6:
+
+            case 6:
                     Function_VFX_Meeting.Anger(visualEffect,emotionData);
                     break;
 
-            }
+            case 7:
+                Function_VFX_Meeting.Disgust(visualEffect, emotionData);
+                break;
+
+            case 8:
+                Function_VFX_Meeting.Fear(visualEffect, emotionData);
+                break;
+
+        }
     }
 
     void selectSize()
