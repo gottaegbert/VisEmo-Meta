@@ -15,9 +15,17 @@ public class Function_LoadScene_MainMenu : MonoBehaviour
         SceneManager.LoadScene("datescene");
     }
 
+    public void PlayScene2Girl()
+    {
+        SceneManager.LoadScene("datescene-girl");
+    }
+
     public void ExitGame(){
         SceneManager.LoadScene("Menu");
    }
+
+
+    
 
 
 
