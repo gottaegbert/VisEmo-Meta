@@ -41,7 +41,7 @@ public class Function_VFX_Meeting : MonoBehaviour
         //visualEffect.SetFloat("_Intensity",0f);
         //_Intensity ("Intensity",Float) = 0
 
-        Debug.Log("Anger:" + emotionData);
+        Debug.Log("Happiness" + emotionData);
 
     }
 
@@ -62,7 +62,7 @@ public class Function_VFX_Meeting : MonoBehaviour
         //_Intensity ("Intensity",Float) = 0
 
 
-        Debug.Log("Anger:" + emotionData);
+        Debug.Log("Surprise" + emotionData);
 
     }
 

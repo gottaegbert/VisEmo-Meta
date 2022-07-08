@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-6198241130457962351
+--- !u!114 &-7177958876643311535
 MonoBehaviour:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9,38 +9,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5485954d14dfb9a4c8ead8edb0ded5b1, type: 3}
-  m_Name: LiftGammaGain
+  m_Script: {fileID: 11500000, guid: 97c23e3b12dc18c42a140437e53d3951, type: 3}
+  m_Name: Tonemapping
   m_EditorClassIdentifier: 
-  active: 1
-  lift:
+  active: 0
+  mode:
     m_OverrideState: 1
-    m_Value: {x: 0.9935654, y: 1, z: 0.9591194, w: -2.3021457e-10}
-  gamma:
-    m_OverrideState: 1
-    m_Value: {x: 1, y: 0.934921, z: 0.9534716, w: -0.112359546}
-  gain:
-    m_OverrideState: 0
-    m_Value: {x: 1, y: 1, z: 1, w: 0}
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d7fd9488000d3734a9e00ee676215985, type: 3}
-  m_Name: ConfrenceRoom_URP_Correction
-  m_EditorClassIdentifier: 
-  components:
-  - {fileID: 8596023042354656053}
-  - {fileID: 3939930677321730296}
-  - {fileID: 794109299032515320}
-  - {fileID: 3851826068658980257}
-  - {fileID: -6198241130457962351}
---- !u!114 &794109299032515320
+    m_Value: 2
+--- !u!114 &-4758983399095593627
 MonoBehaviour:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
@@ -54,7 +30,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   active: 1
   postExposure:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 0.4
   contrast:
     m_OverrideState: 1
@@ -68,7 +44,25 @@ MonoBehaviour:
   saturation:
     m_OverrideState: 0
     m_Value: 0
---- !u!114 &3851826068658980257
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7fd9488000d3734a9e00ee676215985, type: 3}
+  m_Name: ConfrenceRoom_URP_Correction 1
+  m_EditorClassIdentifier: 
+  components:
+  - {fileID: -7177958876643311535}
+  - {fileID: 7528896144207934315}
+  - {fileID: -4758983399095593627}
+  - {fileID: 5692437908198123510}
+  - {fileID: 9044703879581400214}
+--- !u!114 &5692437908198123510
 MonoBehaviour:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
@@ -87,7 +81,7 @@ MonoBehaviour:
   tint:
     m_OverrideState: 0
     m_Value: 0
---- !u!114 &3939930677321730296
+--- !u!114 &7528896144207934315
 MonoBehaviour:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
@@ -127,7 +121,7 @@ MonoBehaviour:
   dirtIntensity:
     m_OverrideState: 0
     m_Value: 0
---- !u!114 &8596023042354656053
+--- !u!114 &9044703879581400214
 MonoBehaviour:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
@@ -136,10 +130,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97c23e3b12dc18c42a140437e53d3951, type: 3}
-  m_Name: Tonemapping
+  m_Script: {fileID: 11500000, guid: 5485954d14dfb9a4c8ead8edb0ded5b1, type: 3}
+  m_Name: LiftGammaGain
   m_EditorClassIdentifier: 
-  active: 0
-  mode:
+  active: 1
+  lift:
     m_OverrideState: 1
-    m_Value: 2
+    m_Value: {x: 0.9935654, y: 1, z: 0.9591194, w: -2.3021457e-10}
+  gamma:
+    m_OverrideState: 1
+    m_Value: {x: 1, y: 0.934921, z: 0.9534716, w: -0.112359546}
+  gain:
+    m_OverrideState: 0
+    m_Value: {x: 1, y: 1, z: 1, w: 0}
