@@ -6,6 +6,7 @@ using UnityEngine;
 public class Function_ObjectClicker : MonoBehaviour
 {
     private Camera _mainCamera;
+    public GameObject _playerFollowCamera;
     
     //Set Player
     public GameObject Player;
@@ -62,6 +63,11 @@ public class Function_ObjectClicker : MonoBehaviour
         //Make legs & feet invisible
         Player.transform.GetChild(7).gameObject.SetActive(false);
         Player.transform.GetChild(8).gameObject.SetActive(false);
+
+
+        //Set camera Z
+        //_playerFollowCamera.GetComponent<>(cinemachine);
+
     }
 
     void StandUp()

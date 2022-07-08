@@ -6,11 +6,16 @@ using UnityEngine.SceneManagement;
 
 public class Function_LoadScene_MainMenu : MonoBehaviour
 {
-   public void PlayGame(){
+   public void PlayScene1(){
         SceneManager.LoadScene("TestScene1");
    }
 
-   public void ExitGame(){
+    public void PlayScene2()
+    {
+        SceneManager.LoadScene("datescene");
+    }
+
+    public void ExitGame(){
         SceneManager.LoadScene("Menu");
    }
 
