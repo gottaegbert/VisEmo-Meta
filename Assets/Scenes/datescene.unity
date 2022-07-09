@@ -6824,6 +6824,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1138929377}
   - component: {fileID: 1138929376}
+  - component: {fileID: 1138929379}
   - component: {fileID: 1138929375}
   - component: {fileID: 1138929374}
   - component: {fileID: 1138929373}
@@ -6831,7 +6832,6 @@ GameObject:
   - component: {fileID: 1138929371}
   - component: {fileID: 1138929370}
   - component: {fileID: 1138929378}
-  - component: {fileID: 1138929379}
   m_Layer: 0
   m_Name: Player-boy
   m_TagString: Untagged
@@ -9013,7 +9013,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1642287611}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: fb57546efd293304ea968452c6d2b3a3, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 9f664c69eb19ff84b8851e703cd0a168, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -9029,7 +9029,7 @@ VideoPlayer:
   m_TargetAudioSources:
   - {fileID: 0}
   m_DirectAudioVolumes:
-  - 1
+  - 0.262
   m_Url: 
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
