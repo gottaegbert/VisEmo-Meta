@@ -6,7 +6,7 @@ using UnityEngine;
 public class Function_ObjectClicker : MonoBehaviour
 {
     private Camera _mainCamera;
-    public GameObject _playerFollowCamera;
+    public GameObject CameraTarget;
     
     //Set Player
     public GameObject Player;
@@ -23,7 +23,7 @@ public class Function_ObjectClicker : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButton(0))
         {
             _ray = _mainCamera.ScreenPointToRay(Input.mousePosition);
 
@@ -56,6 +56,10 @@ public class Function_ObjectClicker : MonoBehaviour
         //Reverse SitdownObject
         transform.Rotate(180, 0, 0);
 
+        //Set Camera
+        CameraTarget.transform.localPosition=new Vector3(0, 1.5f, 3.0f);
+
+
         //Set Functions
         Player.transform.position = new Vector3(3.9f, -0.2f, 1.65f);
         Player.GetComponent<CharacterController>().enabled = false;
@@ -76,6 +80,10 @@ public class Function_ObjectClicker : MonoBehaviour
 
         //Reverse SitdownObject
         transform.Rotate(180, 0, 0);
+
+        //Set Camera
+        CameraTarget.transform.localPosition = new Vector3(0, 1.5f, 0f);
+
 
         //Set Functions
         Player.transform.position = new Vector3(5.2f, 0f, 1.73f);
