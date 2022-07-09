@@ -623,7 +623,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 392.21405, y: 0}
+  m_AnchoredPosition: {x: 390.25403, y: 0}
   m_SizeDelta: {x: 0, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &137711565
@@ -2148,7 +2148,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 59%
+  m_text: 72%
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 84dd14695854bbc43a5faa24fcf93d0d, type: 2}
   m_sharedMaterial: {fileID: 21261991626553910, guid: 84dd14695854bbc43a5faa24fcf93d0d, type: 2}
@@ -2928,8 +2928,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25
-  m_fontSizeBase: 25
+  m_fontSize: 10
+  m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3417,7 +3417,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 90.86, y: 0}
+  m_AnchoredPosition: {x: 87.92, y: 0}
   m_SizeDelta: {x: 0, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &657093646
@@ -3454,7 +3454,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Anxious (50)
+  m_text: Disgust (50)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4bd810f1cbcb0f446a8f5a31453e243f, type: 2}
   m_sharedMaterial: {fileID: 21539420542967178, guid: 4bd810f1cbcb0f446a8f5a31453e243f, type: 2}
@@ -3761,6 +3761,7 @@ GameObject:
   - component: {fileID: 708592436}
   - component: {fileID: 708592439}
   - component: {fileID: 708592438}
+  - component: {fileID: 708592440}
   m_Layer: 5
   m_Name: MaxemoBar
   m_TagString: Untagged
@@ -3840,6 +3841,19 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   eventSource: {fileID: 0}
+--- !u!114 &708592440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 708592435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb79ec0ae99e4114dab00e4a853bdf27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myBar: {fileID: 708592439}
 --- !u!1 &714637239
 GameObject:
   m_ObjectHideFlags: 0
@@ -3942,7 +3956,7 @@ GameObject:
   - component: {fileID: 715981985}
   - component: {fileID: 715981988}
   - component: {fileID: 715981987}
-  - component: {fileID: 715981986}
+  - component: {fileID: 715981989}
   m_Layer: 5
   m_Name: AngryBar
   m_TagString: Untagged
@@ -3972,19 +3986,6 @@ RectTransform:
   m_AnchoredPosition: {x: -500, y: 281}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &715981986
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 715981984}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d14610d360d540647961ccbe5cfcce5e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myBar: {fileID: 715981988}
 --- !u!114 &715981987
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4035,6 +4036,19 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   eventSource: {fileID: 0}
+--- !u!114 &715981989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 715981984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bab01dd40f71974e83e6f4f3c7b6d26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myBar: {fileID: 715981988}
 --- !u!1 &718340473
 GameObject:
   m_ObjectHideFlags: 0
@@ -4534,7 +4548,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 59%
+  m_text: 50%
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 84dd14695854bbc43a5faa24fcf93d0d, type: 2}
   m_sharedMaterial: {fileID: 21261991626553910, guid: 84dd14695854bbc43a5faa24fcf93d0d, type: 2}
@@ -4857,7 +4871,7 @@ MonoBehaviour:
       rgba: 4281087726
     indicatorImage: {fileID: 193658641}
     indicatorText: {fileID: 1432501186}
-  - name: Anxious
+  - name: Disgust
     value: 50
     color:
       serializedVersion: 2
@@ -6093,8 +6107,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ad22da32cabd2ae4491744654fd3f56b, type: 3}
-  m_Type: 0
+  m_Sprite: {fileID: 21300000, guid: bfabc30b671dd604c9c84f7ce3e0edbe, type: 3}
+  m_Type: 1
   m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
@@ -6855,7 +6869,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20c6dbf0102c7bc468113ccdd97dad83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentPercent: 59
+  currentPercent: 72.4
   speed: 5
   minValue: 0
   maxValue: 100
@@ -6899,7 +6913,7 @@ GameObject:
   - component: {fileID: 1170173309}
   - component: {fileID: 1170173312}
   - component: {fileID: 1170173311}
-  - component: {fileID: 1170173310}
+  - component: {fileID: 1170173313}
   m_Layer: 5
   m_Name: SurprisedBar
   m_TagString: Untagged
@@ -6929,19 +6943,6 @@ RectTransform:
   m_AnchoredPosition: {x: -327.48996, y: -12.5}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1170173310
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1170173308}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d14610d360d540647961ccbe5cfcce5e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myBar: {fileID: 1170173312}
 --- !u!114 &1170173311
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6992,6 +6993,19 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   eventSource: {fileID: 0}
+--- !u!114 &1170173313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1170173308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 481f538f8d5ce884ba3fa4d38aa5d939, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myBar: {fileID: 1170173312}
 --- !u!1 &1235866784
 GameObject:
   m_ObjectHideFlags: 0
@@ -8251,7 +8265,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 239.582, y: 0}
+  m_AnchoredPosition: {x: 235.66199, y: 0}
   m_SizeDelta: {x: 0, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1431793975
@@ -8961,7 +8975,7 @@ GameObject:
   - component: {fileID: 1689582570}
   - component: {fileID: 1689582573}
   - component: {fileID: 1689582572}
-  - component: {fileID: 1689582571}
+  - component: {fileID: 1689582574}
   m_Layer: 5
   m_Name: AfraidBar
   m_TagString: Untagged
@@ -8991,19 +9005,6 @@ RectTransform:
   m_AnchoredPosition: {x: -327.48996, y: 177.5}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1689582571
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1689582569}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d14610d360d540647961ccbe5cfcce5e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myBar: {fileID: 1689582573}
 --- !u!114 &1689582572
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9054,6 +9055,19 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   eventSource: {fileID: 0}
+--- !u!114 &1689582574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1689582569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d14610d360d540647961ccbe5cfcce5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myBar: {fileID: 1689582573}
 --- !u!1 &1725279052
 GameObject:
   m_ObjectHideFlags: 0
@@ -9314,7 +9328,7 @@ GameObject:
   - component: {fileID: 1772958480}
   - component: {fileID: 1772958483}
   - component: {fileID: 1772958482}
-  - component: {fileID: 1772958481}
+  - component: {fileID: 1772958484}
   m_Layer: 5
   m_Name: AnxiousBar
   m_TagString: Untagged
@@ -9344,19 +9358,6 @@ RectTransform:
   m_AnchoredPosition: {x: -672.5101, y: 177.5}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1772958481
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1772958479}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d14610d360d540647961ccbe5cfcce5e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myBar: {fileID: 1772958483}
 --- !u!114 &1772958482
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9407,6 +9408,19 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   eventSource: {fileID: 0}
+--- !u!114 &1772958484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1772958479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6383ed852ce239c488536415af3fe575, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myBar: {fileID: 1772958483}
 --- !u!1 &1840646045
 GameObject:
   m_ObjectHideFlags: 0
@@ -9444,7 +9458,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 76.86, y: 0}
+  m_AnchoredPosition: {x: 73.92, y: 0}
   m_SizeDelta: {x: 0, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1840646047
@@ -9695,12 +9709,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ad22da32cabd2ae4491744654fd3f56b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bfabc30b671dd604c9c84f7ce3e0edbe, type: 3}
   m_Type: 3
   m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
-  m_FillAmount: 0.59
+  m_FillAmount: 0.766
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
@@ -9924,14 +9938,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.972549, g: 0.972549, b: 0.8745098, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ad22da32cabd2ae4491744654fd3f56b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bfabc30b671dd604c9c84f7ce3e0edbe, type: 3}
   m_Type: 3
   m_PreserveAspect: 1
   m_FillCenter: 1
