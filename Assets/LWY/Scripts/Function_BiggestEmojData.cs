@@ -11,7 +11,7 @@ public class Function_BiggestEmojData : MonoBehaviour
         float biggestData;
 
         int sequence=2;
-        for(int i=3;i<7;i++){
+        for(int i=2;i<7;i++){
             if(max<array[i]){
 
                 max= array[i];

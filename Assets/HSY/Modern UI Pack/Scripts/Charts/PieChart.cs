@@ -44,6 +44,7 @@ namespace Michsky.UI.ModernUIPack
 		void Update()
 		{
 			this.borderThickness = (float)Mathf.Clamp(this.borderThickness, -75, rectTransform.rect.width / 3.333f);
+        
 		}
 
 		protected override void OnPopulateMesh(VertexHelper vh)
