@@ -15,7 +15,7 @@ public class AnimaToggle : MonoBehaviour
 
     private float timer = 0;
    
-    private float _delayTimeAnmition = 6.1f;
+    private float _delayTimeAnmition = 1.0f;
 
     
     void Start()
@@ -34,15 +34,28 @@ public class AnimaToggle : MonoBehaviour
                 anim.SetBool("HappyUp", true);
                 timer = 0;
                 Debug.Log("happyanimation");
-               //StartCoroutine(ResetBool(excitingUp,0.5f));
+               StartCoroutine(ResetBool(excitingUp,0.5f));
                 }
             else
             {
                 anim.SetBool("HappyUp", false);
-               // excitingUp = true;
             }
+        }
+
+        if (anim != null && MainScript.results != null)
+        {
+            if (sequence == 5 || timer >= _delayTimeAnmition)
+            {
+                anim.SetBool("SadUp", true);
+                timer = 0;
+                Debug.Log("Sadanimation");
+                StartCoroutine(ResetBool(excitingUp, 0.5f));
             }
-            //&& !excitingUp
+            else
+            {
+                anim.SetBool("SadUp", false);
+            }
+        }
     }
 
    IEnumerator ResetBool (bool boolToReset, float delay = 0.1f)
