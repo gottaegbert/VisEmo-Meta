@@ -132,9 +132,6 @@ public class Function_VFX_Meeting : MonoBehaviour
 
 
 
-
-
-
     public static void changeSize(VisualEffect visualEffect, float engagementData)
     {
         visualEffect.SetFloat("Size",engagementData/10000*5);
@@ -143,13 +140,18 @@ public class Function_VFX_Meeting : MonoBehaviour
 
 
 
-
-
-
-    public static void changeEnvironment(Material material)
+    public static void changeEnvironment(Material material, float engagementData)
     {
-        
-        material.SetColor("_EmissionColor", new Color(UnityEngine.Random.Range(0f, 1f), 0.5f, 1-UnityEngine.Random.Range(0f, 1f)));
+        if (engagementData<50.0f)
+        {
+            material.SetColor("_EmissionColor", new Color(0, 0.5f* (100 - engagementData)/100f, 1.0f* (100 - engagementData) / 100f));
+
+        }
+        else
+        {
+            material.SetColor("_EmissionColor", new Color(1.0f * (100 - engagementData) / 100f, 0.5f * (100 - engagementData) / 100f, 0));
+
+        }
     }
 
 }

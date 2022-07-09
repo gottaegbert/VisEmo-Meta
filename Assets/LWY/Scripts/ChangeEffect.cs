@@ -49,7 +49,7 @@ public class ChangeEffect : MonoBehaviour
         {
             newResults = MainScript.results;
             (emotionData,sequence)=Function_BiggestEmojData.GetMax(newResults);
-            engagementData = Function_DoubletoFloat.emoMath(newResults[9]);
+            engagementData = Function_DoubletoFloat.emoMath(newResults[9]) / 100f;
             //Debug.Log(engagementData);
 
             //Set delay--------
@@ -113,7 +113,7 @@ public class ChangeEffect : MonoBehaviour
 
     void selectEnvironmetColor()
     {
-        Function_VFX_Meeting.changeEnvironment(material);
+        Function_VFX_Meeting.changeEnvironment(material,engagementData);
     }
 
 
