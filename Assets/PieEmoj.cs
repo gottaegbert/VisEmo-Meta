@@ -58,7 +58,7 @@ public class PieEmoj : MonoBehaviour
                 //float _newvalue = myChart.chartData[i].value;
                 //_newvalue = newResults
                 //_newvalue = Mathf.Clamp(Mathf.Lerp(_newvalue, minHeight + (Function_DoubletoFloat.emoMath(newResults[i+2]) * (maxHeight - minHeight) * 0.5f), updateSentivity * 0.05f), minHeight, maxHeight);
-                Debug.Log(newResults[i + 2]);
+              //  Debug.Log(newResults[i + 2]);
             myChart.ChangeValue(i, Function_DoubletoFloat.emoMath(newResults[i + 2]));
             myChart.UpdateIndicators();
            
