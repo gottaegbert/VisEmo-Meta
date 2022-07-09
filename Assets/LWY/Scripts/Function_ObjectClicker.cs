@@ -1,13 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Cinemachine;
 
 
 public class Function_ObjectClicker : MonoBehaviour
 {
     private Camera _mainCamera;
     public GameObject CameraTarget;
-    
+    public GameObject PlayerFllowCamera;
+    private CinemachineVirtualCamera cinemachine;
+
     //Set Player
     public GameObject Player;
 
@@ -57,11 +60,13 @@ public class Function_ObjectClicker : MonoBehaviour
         transform.Rotate(180, 0, 0);
 
         //Set Camera
-        CameraTarget.transform.localPosition=new Vector3(0, 1.5f, 3.0f);
+        //cinemachine.
+
+        //CameraTarget.transform.localPosition=new Vector3(0, 1.5f, 3.0f);
+        //Player.SetActive(false);
 
 
         //Set Functions
-        Player.transform.position = new Vector3(3.9f, -0.2f, 1.65f);
         Player.GetComponent<CharacterController>().enabled = false;
 
         //Make legs & feet invisible
@@ -69,8 +74,6 @@ public class Function_ObjectClicker : MonoBehaviour
         Player.transform.GetChild(8).gameObject.SetActive(false);
 
 
-        //Set camera Z
-        //_playerFollowCamera.GetComponent<>(cinemachine);
 
     }
 
@@ -82,10 +85,10 @@ public class Function_ObjectClicker : MonoBehaviour
         transform.Rotate(180, 0, 0);
 
         //Set Camera
-        CameraTarget.transform.localPosition = new Vector3(0, 1.5f, 0f);
+        //CameraTarget.transform.localPosition = new Vector3(0, 1.5f, 0f);
 
 
-        //Set Functions
+        //Set Functionsaass
         Player.transform.position = new Vector3(5.2f, 0f, 1.73f);
         Player.GetComponent<CharacterController>().enabled = true;
 
@@ -93,5 +96,6 @@ public class Function_ObjectClicker : MonoBehaviour
         Player.transform.GetChild(7).gameObject.SetActive(true);
         Player.transform.GetChild(8).gameObject.SetActive(true);
     }
+
 
 }
