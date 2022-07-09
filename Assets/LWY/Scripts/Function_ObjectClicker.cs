@@ -21,6 +21,7 @@ public class Function_ObjectClicker : MonoBehaviour
     
     private void Start() {
         _mainCamera = Camera.main;
+        cinemachine = PlayerFllowCamera.GetComponent<CinemachineVirtualCamera>();
     }
 
 
@@ -60,14 +61,17 @@ public class Function_ObjectClicker : MonoBehaviour
         transform.Rotate(180, 0, 0);
 
         //Set Camera
-        //cinemachine.
+        cinemachine.GetCinemachineComponent<Cinemachine3rdPersonFollow>().CameraDistance = -2.0f;
+
 
         //CameraTarget.transform.localPosition=new Vector3(0, 1.5f, 3.0f);
         //Player.SetActive(false);
 
 
         //Set Functions
+        Player.transform.position = new Vector3(4.0f, 0.0f, 1.73f);
         Player.GetComponent<CharacterController>().enabled = false;
+
 
         //Make legs & feet invisible
         Player.transform.GetChild(7).gameObject.SetActive(false);
