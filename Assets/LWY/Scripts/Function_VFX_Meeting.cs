@@ -134,7 +134,7 @@ public class Function_VFX_Meeting : MonoBehaviour
 
     public static void changeSize(VisualEffect visualEffect, float engagementData)
     {
-        visualEffect.SetFloat("Size",engagementData/10000*5);
+        visualEffect.SetFloat("Size",engagementData/100*5);
     }
 
 
