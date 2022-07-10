@@ -45,7 +45,7 @@ public class EngageProgress : MonoBehaviour
 
                 if (engagementData < 30.0f)
                 {
-                    image.color = new Color(0, 0.5f, 1);
+                    image.color = new Color(0, 0.7f, 1);
                 }
 
                 else
