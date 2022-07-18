@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class Function_LoadScene_MainMenu : MonoBehaviour
 {
    public void PlayScene1(){
-        SceneManager.LoadScene("TestScene1");
+        SceneManager.LoadScene("MeetingScene");
    }
 
     public void PlayScene2()
