@@ -6,13 +6,13 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Menu.unity
+    path: Assets/Scenes/1.Menu.unity
     guid: bb72fba086c6339468600a07160c262e
   - enabled: 1
-    path: Assets/Scenes/MeetingScene.unity
+    path: Assets/Scenes/2.Meeting.unity
     guid: 89e36e8ed8145184b966278f863bd855
   - enabled: 1
-    path: Assets/Scenes/datescene.unity
+    path: Assets/Scenes/3.Party.unity
     guid: f23f66cf772378d4d97c17ddae61d618
   - enabled: 1
     path: Assets/Scenes/datescene-girl.unity

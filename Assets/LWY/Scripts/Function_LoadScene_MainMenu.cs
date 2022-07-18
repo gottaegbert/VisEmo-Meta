@@ -7,12 +7,12 @@ using UnityEngine.SceneManagement;
 public class Function_LoadScene_MainMenu : MonoBehaviour
 {
    public void PlayScene1(){
-        SceneManager.LoadScene("MeetingScene");
+        SceneManager.LoadScene("2.Meeting");
    }
 
     public void PlayScene2()
     {
-        SceneManager.LoadScene("datescene");
+        SceneManager.LoadScene("3.Party");
     }
 
     public void PlayScene2Girl()
@@ -21,7 +21,7 @@ public class Function_LoadScene_MainMenu : MonoBehaviour
     }
 
     public void ExitGame(){
-        SceneManager.LoadScene("Menu");
+        SceneManager.LoadScene("1.Menu");
    }
 
 
